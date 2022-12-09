@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "36799550228",
+    "project_id": "tradi-p",
+    "storage_bucket": "tradi-p.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36799550228:android:380515864b5fe85838e801",
+        "android_client_info": {
+          "package_name": "com.example.tradi_p"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36799550228-nor4amub2rggji5ja4blh00pfoh24ho8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD33rHwUgUX_I0UvU-4OwM1W2mMqKpOjd0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36799550228-nor4amub2rggji5ja4blh00pfoh24ho8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
