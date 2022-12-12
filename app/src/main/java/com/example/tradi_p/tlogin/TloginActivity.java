@@ -17,6 +17,7 @@ import android.widget.Toast;
 import com.example.tradi_p.R;
 import com.example.tradi_p.common.Util;
 import com.example.tradi_p.no_internet.NoInternetActivity;
+import com.example.tradi_p.serge.conn_tradi_1;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
@@ -73,7 +74,7 @@ public class TloginActivity extends AppCompatActivity {
                                 progressBar.setVisibility(View.GONE);
                                 if (task.isSuccessful()) {
                                     //4.4 Ajout du lien vers mainActivity si l'utilisateur est bien connecté
-                                    startActivity(new Intent(TloginActivity.this, HomeActivity.class));  //voir le contenu ??
+                                    startActivity(new Intent(TloginActivity.this, conn_tradi_1.class));  //voir le contenu ??
                                     //4.5 Utilisation de finish() pour fermer l'activité présente
                                     finish();
                                 } else {
@@ -135,7 +136,7 @@ public class TloginActivity extends AppCompatActivity {
         FirebaseUser firebaseUser = CURRENT_USER;
 
         if (firebaseUser != null) {
-            startActivity(new Intent(TloginActivity.this, HomeActivity.class));   //voir le contenu ??
+            startActivity(new Intent(TloginActivity.this, conn_tradi_1.class));   //voir le contenu ??
             finish();
         }
     }

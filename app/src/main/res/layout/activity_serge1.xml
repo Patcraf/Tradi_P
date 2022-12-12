@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".serge.conn_tradi_1">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="ETES VOUS TRADI-PRATICIEN ?"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPrenom"
+        android:layout_width="161dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="PreNom*"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextNom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextNom"
+        app:layout_constraintTop_toTopOf="@+id/editTextNom" />
+
+    <EditText
+        android:id="@+id/editTextNom"
+        android:layout_width="148dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Nom*"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextCodeTradiP"
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Code Tradi P*"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextNom"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNom" />
+
+    <EditText
+        android:id="@+id/editTextCategorie"
+        android:layout_width="158dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Catégorie*"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextCodeTradiP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="@+id/editTextPrenom"
+        app:layout_constraintTop_toTopOf="@+id/editTextCodeTradiP"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextAdresseComplete"
+        android:layout_width="345dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Adresse Complete*"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextCategorie"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextCodeTradiP"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCodeTradiP" />
+
+    <EditText
+        android:id="@+id/editTextMail"
+        android:layout_width="362dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Adresse E-mail*"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextSpecialite"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSpecialite" />
+
+    <EditText
+        android:id="@+id/editTextCodePostal"
+        android:layout_width="207dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Code Postal Centre*"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextAdresseComplete"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAdresseComplete" />
+
+    <EditText
+        android:id="@+id/editTextSpecialite"
+        android:layout_width="153dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Votre Spécialité*"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextCodePostal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextCodePostal"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCodePostal" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="* Champs obligatoire"
+        app:layout_constraintStart_toStartOf="@+id/editTextMail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMail"
+        tools:text="Objet de Demande" />
+
+    <Button
+        android:id="@+id/btnSerge1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="136dp"
+        android:text="S'INSCRIRE"
+        android:textColor="@color/primaryTextColor"
+        app:layout_constraintEnd_toEndOf="@+id/editTextMail"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

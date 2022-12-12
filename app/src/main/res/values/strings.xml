@@ -4,23 +4,23 @@
 
     <string name="app_s_logo">Apps logo</string>
     <!--  A1 Login  -->
-    <string name="enter_email">Enter email</string>
-    <string name="enter_password">Enter password</string>
+    <string name="enter_email">Votre email</string>
+    <string name="enter_password">Votre mot de passe</string>
     <string name="login">Login</string>
-    <string name="reset_password">Reset password</string>
-    <string name="don_t_have_account">Don\'t have account?</string>
+    <string name="reset_password">Changer votre mot de passe</string>
+    <string name="don_t_have_account">Vous n\'avez pas de compte?</string>
     <string name="signup">Sign up</string>
 
     <!--  A2 SignUp  -->
-    <string name="enter_name">Enter name</string>
-    <string name="confirm_password">Confirm password</string>
-    <string name="enter_correct_email">Enter correct email</string>
+    <string name="enter_name">Votre nom</string>
+    <string name="confirm_password">Confirmer votre mot de passe</string>
+    <string name="enter_correct_email">Entrer votre email</string>
     <string name="password_mismatch">Password missmatch</string>
-    <string name="user_created_successfully">User created successfully</string>
+    <string name="user_created_successfully">Utilisateur créé avec success</string>
     <string name="signup_failed">Signup Failed : %1$s</string>
     <string name="access_permission_is_required">Acces permission is required</string>
     <!--  A3 Reset Password  -->
-    <string name="reset_password_instructions">Reset Password instructions has been sent on email : %1$s</string>
+    <string name="reset_password_instructions">La réinitialisation du mot de passe a été envoyée par e-mail : %1$s</string>
     <string name="failed_to_send_email">Failed to sent email : %1$s</string>
     <string name="resend_timer">Resend in : %1$s</string>
 
@@ -29,9 +29,9 @@
     <string name="nameUpdateFailed">Failed to update profile: %1$s</string>
     <string name="save">Save</string>
     <string name="logout">Logout</string>
-    <string name="change_avatar">Change avatar</string>
-    <string name="delete_avatar">Delete Avatar</string>
-    <string name="avatar_deleted_succesfully">Avatar deleted successfully</string>
+    <string name="change_avatar">Changer votre avatar</string>
+    <string name="delete_avatar">Supprimer votre Avatar</string>
+    <string name="avatar_deleted_succesfully">Avatar supprimé avec succes</string>
     <string name="profile">Profile</string>
     <string name="change_name_successfully">Change name successfully</string>
     <string name="profile_updated">Profile updated</string>
