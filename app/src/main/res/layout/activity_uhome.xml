@@ -6,41 +6,79 @@
     android:layout_height="match_parent"
     tools:context=".loginuser.UhomeActivity">
 
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/svHome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:queryBackground="@color/white"
+        android:queryHint="Rechercher"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <ListView-->
+    <!--        android:id="@+id/rvTradi"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_below="@+id/searchView1"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginBottom="0dp"-->
+    <!--        android:divider="@android:color/holo_blue_dark"-->
+    <!--        android:dividerHeight="2dp"-->
+    <!--        android:visibility="visible"-->
+    <!--        tools:listitem="@android:layout/simple_list_item_1" />-->
+
     <!-- A ajouter après  -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTradi"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:divider="@android:color/holo_blue_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/svHome" />
+
     <include
         android:id="@+id/progressBar"
         layout="@layout/custom_progressbar"
         android:visibility="gone" />
 
-    <!--    Vertical Linear fixé à 0dp // 0dp-->
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <!--    &lt;!&ndash;    Vertical Linear fixé à 0dp // 0dp&ndash;&gt;-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
 
-        <!--        Ajout du Tablayout  avec height à wrap pour qu'il soit fixé en haut
+    <!--        Ajout du Tablayout  avec height à wrap pour qu'il soit fixé en haut
             Suppression des TabItem pour ajouter par la suite une custom view qui permettra l'usage de
             différents graphisme en fonction du tab sélectionné -->
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabMain"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/primaryLightColor"
-            app:tabIndicator="@color/black">
-            <!-- TabIndicator sert à forcer la couleur du texte et des icones -->
+    <!--        <com.google.android.material.tabs.TabLayout-->
+    <!--            android:id="@+id/tabMain"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:background="@color/primaryLightColor"-->
+    <!--            app:tabIndicator="@color/black">-->
+    <!--            &lt;!&ndash; TabIndicator sert à forcer la couleur du texte et des icones &ndash;&gt;-->
 
-        </com.google.android.material.tabs.TabLayout>
+    <!--        </com.google.android.material.tabs.TabLayout>-->
 
-        <!--        Ajout d'un viewPager dans lequel on va afficher les différents fragments-->
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/vpMain"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="8dp" />
-    </LinearLayout>
+    <!--        Ajout d'un viewPager dans lequel on va afficher les différents fragments-->
+    <!--        <androidx.viewpager.widget.ViewPager-->
+    <!--            android:id="@+id/vpMain"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_margin="8dp" >-->
+
+    <!--        </androidx.viewpager.widget.ViewPager>-->
+    <!--    </LinearLayout>-->
 </androidx.constraintlayout.widget.ConstraintLayout>
