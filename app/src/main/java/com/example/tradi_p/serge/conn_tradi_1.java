@@ -18,8 +18,6 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import java.util.UUID;
-
 
 public class conn_tradi_1 extends AppCompatActivity {
 
@@ -81,7 +79,7 @@ public class conn_tradi_1 extends AppCompatActivity {
     String id = FirebaseAuth.getInstance().getUid();
 
 
-        Donnees myDataToFirestore = new Donnees(id, nom, prenom, codeTradiP
+        ModelDonnees myDataToFirestore = new ModelDonnees(id, nom, prenom, codeTradiP
         , categorie, adresseComplete, codePostal, specialite, mail);
 
         db.collection("Tradipraticien").document(id).set(myDataToFirestore)   //jai change "Users" en "Tradipraticien"
