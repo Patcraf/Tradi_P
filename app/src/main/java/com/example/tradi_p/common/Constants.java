@@ -38,6 +38,8 @@ public interface Constants {
     //-------------- Collection TRADIPRATICIEN
     String TRADIPRATICIEN = "Tradipraticien";
 
+
+
     //-------------- end Users
 
     //-------------- Collection Friend request

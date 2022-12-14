@@ -40,6 +40,9 @@ public class TloginActivity extends AppCompatActivity {
         etEmail = findViewById(R.id.etEmail);
         etPassword = findViewById(R.id.etPassword);
 
+        etEmail.setText("lanza@yahoo.fr");
+        etPassword.setText("R123456789");
+
         //9.1 Initialisation de la progressBar
         progressBar = findViewById(R.id.progressBar);
     }

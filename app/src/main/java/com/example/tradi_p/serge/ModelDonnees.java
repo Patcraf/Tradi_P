@@ -1,23 +1,23 @@
 package com.example.tradi_p.serge;
 
-public class Donnees {
+public class ModelDonnees {
 
     String id, nom, prenom, codeTradiP, categorie, adresseComplete,
             codePostal, specialite, mail;
 
 
-    public Donnees() {
+    public ModelDonnees() {
 
     }
 
-    public Donnees(String id, String nom, String prenom) {
+    public ModelDonnees(String id, String nom, String prenom) {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
     }
 
-    public Donnees(String id, String nom, String prenom,
-                   String codeTradiP, String categorie, String
+    public ModelDonnees(String id, String nom, String prenom,
+                        String codeTradiP, String categorie, String
                    adresseComplete, String codePostal, String
                    specialite, String mail) {
 
