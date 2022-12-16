@@ -2,47 +2,25 @@ package com.example.tradi_p.loginuser;
 
 import static com.example.tradi_p.common.Constants.TRADIPRATICIEN;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
-import androidx.core.view.MenuItemCompat;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.viewpager.widget.ViewPager;
-
-import android.content.Intent;
-import android.graphics.Color;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.widget.ListView;
-import android.widget.Toast;
 
 import com.example.tradi_p.R;
-import com.example.tradi_p.chat.ChatActivity;
 import com.example.tradi_p.find.TAdapter;
 import com.example.tradi_p.find.TModel;
 import com.example.tradi_p.profil.ProfilActivity;
-import com.example.tradi_p.serge.Donnees;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.Task;
-import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
-import com.google.firebase.firestore.QuerySnapshot;
-
-import org.jetbrains.annotations.NotNull;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class UhomeActivity extends AppCompatActivity {
 
@@ -118,6 +96,7 @@ public class UhomeActivity extends AppCompatActivity {
                 String id = documentSnapshot.getId();
                 Intent intent = new Intent(UhomeActivity.this, DetailTradiPraticien.class);
                 intent.putExtra("currentTradipraticien", id);
+                intent.putExtra("role", "toto");
                 startActivity(intent);
             }
         });
@@ -149,4 +128,29 @@ public class UhomeActivity extends AppCompatActivity {
         super.onStop();
         adapter.stopListening();
     }
+
+    /**
+     * 2 Ajout de la méthode onCreateOptionsMenu pour afficher le menu
+     **/
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // On souffle le xml de menu_main dans le menu
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+    // fin
+
+    /**
+     * 3 Ajout de la méthode onOptionsItemSelected pour activer le clic sur les items du menu
+     **/
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.mnuProfile) {
+            startActivity(new Intent(UhomeActivity.this, ProfilActivity.class));
+
+        }
+        return super.onOptionsItemSelected(item);
+    }
+    //fin
 }

@@ -1,11 +1,15 @@
 package com.example.tradi_p.tlogin;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 
 import com.example.tradi_p.R;
+import com.example.tradi_p.profil.ProfilActivity;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -22,6 +26,20 @@ public class HomeActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
     // fin
+
+    /**
+     * 3 Ajout de la méthode onOptionsItemSelected pour activer le clic sur les items du menu
+     **/
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.mnuProfile) {
+            startActivity(new Intent(HomeActivity.this, ProfilActivity.class));
+
+        }
+        return super.onOptionsItemSelected(item);
+    }
+    //fin
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

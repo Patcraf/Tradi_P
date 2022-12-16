@@ -40,16 +40,16 @@ public class conn_tradi_1 extends AppCompatActivity {
 
     }
 
-    /**
-     * 2 Ajout de la méthode onCreateOptionsMenu pour afficher le menu
-     **/
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // On souffle le xml de menu_main dans le menu
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-    //fin
+//    /**
+//     * 2 Ajout de la méthode onCreateOptionsMenu pour afficher le menu
+//     **/
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        // On souffle le xml de menu_main dans le menu
+//        getMenuInflater().inflate(R.menu.menu_main, menu);
+//        return super.onCreateOptionsMenu(menu);
+//    }
+//    //fin
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
